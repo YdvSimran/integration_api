@@ -50,7 +50,7 @@ function CreatePassword() {
       // Handle successful response
       if (response.status === 200) {
         // Navigate to the homepage or desired page after successful creation
-        navigate('/home'); // Adjust the route as per your application
+        navigate('/homepage'); // Adjust the route as per your application
       }
     } catch (error) {
       // Handle error cases
@@ -146,3 +146,11 @@ function CreatePassword() {
 }
 
 export default CreatePassword;
+
+
+// make the use of useparams and expiry
+//  time if yes render only one msg else the createpassword page will be rendered 
+//  this will be in forgot password as when clicked on it then redirect it to email
+//  where we will have link and when clicked on that link goes to iindex file to check the expiry time 
+//  then to the createpassword
+
